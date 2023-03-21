@@ -11,7 +11,7 @@ public class Controller {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		System.out.println("Indica el tipo de electrodom�stico");
+		System.out.println("Indica el tipo de electrodoméstico");
 		String tipo=entrada.nextLine();
 	    System.out.println("Indica la marca: ");
 	    String marca=entrada.nextLine();
@@ -24,8 +24,8 @@ public class Controller {
 	    int horas=entrada.nextInt();
 	    final double  COSTEHORA=0.132;
 	    Lavadora miLavadora=new Lavadora(marca, precio, potencia, aguaCaliente);
-	    System.out.println("Consumo por horas:"+ miLavadora.getConsumo(horas));
-	    System.out.println("Coste por horas:"+ miLavadora.getCosteConsumo(horas, COSTEHORA));
+	    System.out.println("Consumo por horas: "+ miLavadora.getConsumo(horas)+" KW");
+	    System.out.println("Coste por horas: "+ miLavadora.getCosteConsumo(horas, COSTEHORA)+" €");
 	    System.out.println(miLavadora.toString());
 	    
 	    
